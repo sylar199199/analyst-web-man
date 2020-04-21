@@ -1,0 +1,9 @@
+diff a/src/view/feedbackManager/index.vue b/src/view/feedbackManager/index.vue	(rejected hunks)
+@@ -144,7 +144,6 @@
+       pickerOptions,
+       dialogVisible: false,
+       search: {
+-        region: "CN",
+         userIdOrName: "",
+         feedBackTimeStart: null,
+         feedBackTimeEnd: null,

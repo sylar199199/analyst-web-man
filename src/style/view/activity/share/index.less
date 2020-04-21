@@ -1,0 +1,138 @@
+@import "~@/style/variables.less";
+@pink: #ef275e;
+.activity-share-home-layer {
+  padding: 50px;
+  background-color: @gray-deep-bg;
+  color: @white;
+  height: 100%;
+  overflow: auto;
+  h1.title {
+    font-size: 48px;
+    color: @pink;
+    margin: 0 0 32px;
+  }
+  .user-name {
+    margin: 0 0 24px;
+    font-size: 36px;
+  }
+  .tips {
+    color: @global-muted;
+    margin: 0 0 40px;
+  }
+  .product-card-layer {
+    border-radius: 16px;
+    border: solid 2px #ff6020;
+    padding: 50px 30px;
+    text-align: center;
+    margin: 0 0 50px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    .img-box {
+      position: relative;
+      width: 140px;
+      height: 157px;
+      padding: 8px 16px 23px 14.5px;
+      background-size: cover;
+      .boxer {
+        position: absolute;
+        top: 8px;
+        left: 16px;
+        width: 140px;
+        height: 180px;
+        .article-card-cover {
+          box-shadow: none;
+        }
+      }
+    }
+    .video-card{
+      width: 320px;
+      height: 180px;
+    }
+  }
+  .content {
+    margin-left: 32px;
+  }
+  .progress-layer {
+    
+    margin: 0 0 50px;
+    ::v-deep.progress {
+      width: 500px;
+      .el-progress-bar__inner {
+        background-color: @global-primary;
+      }
+    }
+    .progress-txt {
+      margin: -18px 0 0;
+      color: @global-primary;
+    }
+  }
+  .progress-avatar-layer {
+    display: flex;
+    justify-content: center;
+    margin: 0 0 30px;
+    .head-pic,
+    .empty-avatar {
+      width: 48px;
+      height: 48px;
+      display: inline-block;
+      margin: 0 6px;
+    }
+    .empty-avatar {
+      opacity: 0.5;
+      border: dashed 2px #ffffff;
+      border-radius: 50%;
+    }
+  }
+  .share-tips {
+    margin: 0 0 30px;
+    span {
+      color: @pink;
+    }
+  }
+  .share-btn {
+    height: 88px;
+    font-size: 30px;
+    border-radius: 50px;
+    margin: 0 0 30px;
+  }
+  .disabled-btn{
+    height: 88px;
+    font-size: 34px;
+    border-radius: 50px;
+    margin: 0 0 30px;
+    background-color: rgba(254, 101, 40, 0.12);
+    border: none;
+  }
+  .share-list-layer {
+    margin: 50px 0 0;
+    border-radius: 16px;
+    border: solid 2px @global-primary;
+    h2 {
+      font-size: 34px;
+      height: 98px;
+      line-height: 98px;
+      border-radius: 16px 16px 0 0;
+      background-color: rgba(254, 116, 61, 0.12);
+    }
+    ul {
+      padding: 30px 30px 10px;
+    }
+    li {
+      height: 48px;
+      line-height: 48px;
+      margin: 0 0 30px;
+      .el-avatar-default {
+        margin: 0 10px 0 0;
+      }
+      span {
+        &.txt {
+          width: 360px;
+          font-size: 28px;
+        }
+        &.num {
+        }
+      }
+    }
+  }
+}
